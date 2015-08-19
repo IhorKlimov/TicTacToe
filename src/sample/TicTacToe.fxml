@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<GridPane fx:id="root" alignment="CENTER" gridLinesVisible="true" maxHeight="-Infinity" maxWidth="-Infinity"
+          minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" stylesheets="@Styles.css"
+          xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="100.0"/>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="100.0"/>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="100.0"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+    </rowConstraints>
+    <children>
+        <Region fx:id="region00" onMouseEntered="#showCharacter" onMousePressed="#drawCharacter" prefHeight="200.0"
+                prefWidth="200.0"/>
+        <Region fx:id="region01" onMouseEntered="#showCharacter" onMousePressed="#drawCharacter" prefHeight="200.0"
+                prefWidth="200.0" GridPane.columnIndex="1"/>
+        <Region fx:id="region02" onMouseEntered="#showCharacter" onMousePressed="#drawCharacter" prefHeight="200.0"
+                prefWidth="200.0" GridPane.columnIndex="2"/>
+        <Region fx:id="region10" onMouseEntered="#showCharacter" onMousePressed="#drawCharacter" prefHeight="200.0"
+                prefWidth="200.0" GridPane.rowIndex="1"/>
+        <Region fx:id="region11" onMouseEntered="#showCharacter" onMousePressed="#drawCharacter" prefHeight="200.0"
+                prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        <Region fx:id="region12" onMouseEntered="#showCharacter" onMousePressed="#drawCharacter" prefHeight="200.0"
+                prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+        <Region fx:id="region20" onMouseEntered="#showCharacter" onMousePressed="#drawCharacter" prefHeight="200.0"
+                prefWidth="200.0" GridPane.rowIndex="2"/>
+        <Region fx:id="region21" onMouseEntered="#showCharacter" onMousePressed="#drawCharacter" prefHeight="200.0"
+                prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+        <Region fx:id="region22" onMouseEntered="#showCharacter" onMousePressed="#drawCharacter" prefHeight="200.0"
+                prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+    </children>
+</GridPane>
